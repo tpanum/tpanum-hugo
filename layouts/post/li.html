@@ -1,0 +1,15 @@
+<div class="ui icon message">
+  {{ if eq .Params.category "machine learning" }}
+  <i class="superscript icon"></i>
+  {{ else if eq .Params.category "programming" }}
+  <i class="code icon"></i>
+  {{ else }}
+  <i class="text file outline icon"></i>
+  {{ end }}
+  <div class="content">
+    <a class="header" href="{{ .Permalink }}">
+      {{ .Title }}
+    </a>
+    <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
+  </div>
+</div>

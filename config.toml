@@ -1,0 +1,9 @@
+baseurl = "http://panum.dk/"
+languageCode = "en-gb"
+title = "Blog of Thomas Kobber Panum"
+
+[params]
+    name="Thomas Kobber Panum"
+    position="Data Scientist"
+    company="Ecsact A/S"
+    companyURL="http://ecsact.dk/"
