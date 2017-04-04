@@ -1,5 +1,5 @@
 +++
-date = "2016-03-23T20:00:00+02:00"
+date = "2016-04-03T20:00:00+02:00"
 draft = false
 title = "The Robot That Got Me a Home In Copenhagen"
 category = "programming"
@@ -42,13 +42,17 @@ Unleashing *the beast* (ie: the robot) quickly yielded some results.
 The robot published listings to me while I were at work, which I contacted straight away, and within a few days I were invited to more than five display sessions.
 During this time I recall a lot of funny phone conversations with landlords, they usually went something like this:
 
-> Me: "Hello, my name is Thomas and call regarding the apartment you have listed on boligportalen"
-> Landlord: "Uh... oh... eh?"
-> Me: "Did I get the wrong number, or is it already unavailable?"
-> Landlord: "Yes, it is still I available... it is just that I JUST put it up?"
-> *Proceeds to get display session invitation*
+> **Me**: *Hello, my name is Thomas and call regarding the apartment you have listed on boligportalen*
+
+> **Landlord**: *Uh... oh... eh?* 🤔
+
+> **Me**: *Did I get the wrong number, or is it already unavailable?*
+
+> **Landlord**: *Yes, it is still I available... it is just that I JUST put it up?*
+
+> *... proceeds to get display session invitation* 🎉
 
 During the time the robot were running boligportalen decided to create an iPhone App with an alike feature, but I never got it to work (and I would never trust its publishing delay).
 I ended up with an apartment within two weeks after been invited to over twenty display sessions.
 
-You can find the (old) source code for the robot 🤖 [here](https://github.com/tpanum/boligcrawler).
+You can find the (old) source code for the robot [here](https://github.com/tpanum/boligcrawler). 🤖
