@@ -1,5 +1,5 @@
 +++
-date = "2016-04-03T20:00:00+02:00"
+date = "2017-04-03T20:00:00+02:00"
 draft = false
 title = "The Robot That Got Me a Home In Copenhagen"
 category = "programming"
