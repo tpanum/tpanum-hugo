@@ -1,5 +1,5 @@
 {{ partial "header.html" . }}
-{{ range (where .Data.Pages.ByPublishDate.Reverse "Section" "post") }}
+{{ range (where .Data.Pages.ByPublishDate "Section" "post") }}
 {{ .Render "li" }}
 {{ end }}
 {{ partial "footer.html" .}}
