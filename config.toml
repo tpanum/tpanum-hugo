@@ -1,9 +1,39 @@
-baseurl = "http://panum.dk/"
-languageCode = "en-gb"
-title = "Blog of Thomas Kobber Panum"
+baseurl = "https://panum.dk/"
+theme = "cocoa-eh"
+builddrafts = true
+canonifyurls = true
+contentdir = "content"
+languageCode = "en-US"
+layoutdir = "layouts"
+publishdir = "public"
+staticdir = "static"
+author = "Thomas Kobber Panum"
+title = "Thomas Kobber Panum"
+disqusshortname = ""
+pluralizelisttitles = false
+[permalinks]
+blog = "blog/:slug/"
 
 [params]
-    name="Thomas Kobber Panum"
-    position="Data Scientist"
-    company="Tryg"
-    companyURL="http://tryg.dk/"
+dateform = "2. January, 2006"
+dateformfull = "Mon Jan 2 2006 15:04:05 MST"
+description = "Thomas Kobber Panum"
+copyright = "Copyright © 2018 Thomas Kobber Panum"
+logofile = "img/logo_black.svg"
+faviconfile = "img/favicon.png"
+highlightjs = true
+progressively = true
+align_left = false
+lang = "en"
+github = "tpanum"
+email = "thomas_atsign_panum.dk"
+linkedin = "tpanum"
+twitter = "tpanum"
+social_banner = "img/favicon.png"
+posts_navigation = true
+small_banner_logo = false
+
+name="Thomas Kobber Panum"
+position="Ph.D. Student"
+company="Wireless Communication Networks, Aalborg University"
+companyURL="http://aau.dk/"
