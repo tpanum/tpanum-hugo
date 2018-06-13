@@ -1,4 +1,8 @@
-## My Personal Blog ##
-It's built using [Hugo](http://gohugo.io) and [Semantic UI](http://semantic-ui.com/).
+# My Personal Website #
 
-Thomas
+Uses the [cocao-eh theme](https://github.com/mtn/cocoa-eh-hugo-theme).
+
+## Cloning
+```
+git clone --recurse-submodules git@github.com:tpanum/tpanum-hugo
+```

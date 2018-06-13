@@ -29,6 +29,7 @@ github = "tpanum"
 email = "thomas_atsign_panum.dk"
 linkedin = "tpanum"
 twitter = "tpanum"
+latestpostcount = 5
 social_banner = "img/favicon.png"
 posts_navigation = true
 small_banner_logo = false
