@@ -11,6 +11,7 @@ author = "Thomas Kobber Panum"
 title = "Thomas Kobber Panum"
 disqusshortname = ""
 pluralizelisttitles = false
+
 [permalinks]
 blog = "blog/:slug/"
 
@@ -38,3 +39,4 @@ name="Thomas Kobber Panum"
 position="Ph.D. Student"
 company="Wireless Communication Networks, Aalborg University"
 companyURL="http://aau.dk/"
+
