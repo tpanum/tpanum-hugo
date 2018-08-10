@@ -3,44 +3,24 @@ title = "CV"
 +++
 
 ### Supervision
-#### aRay: Multi-core parallelization of Matrix Operation
+This section covers the supervision I have conducted at Aalborg University through its problem-based learning model.
+Each project is valued at 15 ETCS.
 
-Computer Science, 4th Semester, Spring 2018
+##### Computer Science, 4th Semester  &mdash; Spring 2018 
 
+aRay: Multi-core parallelization of Matrix Operation
 (Group of 6)
 
-#### GAMBL: GPU Accelerated Matrix Based Language
+##### Computer Science, 4th Semester  &mdash; Spring 2015
 
-Software Engineering, 4th Semester, Spring 2015
+GAMBL: GPU Accelerated Matrix Based Language (Group of 6)
 
-(Group of 6)
+NOVA: Not Only Visual *[Programming Language for Children in Elementary School]* (Group of 6)
 
-#### NOVA: Not Only Visual (Programming Language for Children in Elementary School)
+A Poker Language (Group of 2)
 
-Software Engineering, 4th Semester, Spring 2015
+Design and Implementation of the EC Language (Group of 6)
 
-(Group of 6)
+Programming Language for Adolescents (Group of 5)
 
-#### A Poker Language
-
-Software Engineering, 4th Semester, Spring 2015
-
-(Group of 2)
-
-#### Design and Implementation of the EC Language
-
-Software Engineering, 4th Semester, Spring 2015
-
-(Group of 6)
-
-#### Programming Language for Adolescents
-
-Software Engineering, 4th Semester, Spring 2015
-
-(Group of 5)
-
-#### Trinity: Scientific Computing on the GPU
-
-Software Engineering, 4th Semester, Spring 2015
-
-(Group of 6)
+Trinity: Scientific Computing on the GPU (Group of 6)
