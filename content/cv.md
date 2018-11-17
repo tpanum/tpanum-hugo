@@ -2,6 +2,15 @@
 title = "CV"
 +++
 
+## Teaching
+
+### Courses
+
+Traffic Analysis and Network Security (Autumn 2017)
+Taught an introductory lecture to machine learning, and how it can be used in a security setting
+
+Secure software development ()
+
 ### Supervision
 This section covers the supervision I have conducted at Aalborg University through its problem-based learning model.
 Each project is valued at 15 ETCS.

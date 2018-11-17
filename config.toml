@@ -1,5 +1,6 @@
 baseurl = "https://panum.dk/"
-theme = "cocoa-eh"
+relativeurls = true
+theme = "hugo-renga"
 builddrafts = true
 canonifyurls = true
 contentdir = "content"
@@ -15,28 +16,48 @@ pluralizelisttitles = false
 [permalinks]
 blog = "blog/:slug/"
 
+
 [params]
 dateform = "2. January, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
 description = "Thomas Kobber Panum"
 copyright = "Copyright © 2018 Thomas Kobber Panum"
-logofile = "img/logo_black.svg"
+logofile = "img/me_circle.png"
 faviconfile = "img/favicon.png"
 highlightjs = true
-progressively = true
+uselatex = true
+progressively = false
 align_left = false
 lang = "en"
+
 github = "tpanum"
 email = "thomas_atsign_panum.dk"
 linkedin = "tpanum"
 twitter = "tpanum"
+
 latestpostcount = 5
 social_banner = "img/favicon.png"
 posts_navigation = true
-small_banner_logo = false
 
 name="Thomas Kobber Panum"
 position="Ph.D. Student"
 company="Wireless Communication Networks, Aalborg University"
 companyURL="http://aau.dk/"
 
+[[menu.primary]]
+identifier = "publications"
+name = "Publications"
+url = "/publications/"
+weight = 1
+
+[[menu.primary]]
+identifier = "teaching"
+name = "Teaching"
+url = "/teaching/"
+weight = 2
+
+[[menu.primary]]
+identifier = "blog"
+name = "Blog"
+url = "/blog/"
+weight = 3
