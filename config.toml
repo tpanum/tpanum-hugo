@@ -21,7 +21,7 @@ blog = "blog/:slug/"
 dateform = "2. January, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
 description = "Thomas Kobber Panum"
-copyright = "Copyright © 2018 Thomas Kobber Panum"
+copyright = "Copyright © 2019 Thomas Kobber Panum"
 logofile = "img/me_circle.png"
 faviconfile = "img/favicon.png"
 highlightjs = true
@@ -51,13 +51,25 @@ url = "/publications/"
 weight = 1
 
 [[menu.primary]]
+identifier = "talks"
+name = "Talks"
+url = "/talks/"
+weight = 2
+
+[[menu.primary]]
+identifier = "press"
+name = "Press"
+url = "/press/"
+weight = 3
+
+[[menu.primary]]
 identifier = "teaching"
 name = "Teaching"
 url = "/teaching/"
-weight = 2
+weight = 4
 
 [[menu.primary]]
 identifier = "blog"
 name = "Blog"
 url = "/blog/"
-weight = 3
+weight = 5

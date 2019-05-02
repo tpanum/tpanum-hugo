@@ -1,16 +1,9 @@
 ---
 title: "Publications"
 menu: "main"
-description: "Publications I have been a part of"
+description: "Publications by me"
 ---
+- *Haaukins: A Highly Accessible and Automated Virtualization Platform for Security Education.* **Thomas Kobber Panum**, Kaspar Hageman, Jens Myrup Pedersen, René Rydhof Hansen. Accepted at IEEE ICALT 2019.
 
-#### Media
-
-[HTTPS: Skat lover krypteret forbindelse fra 1. juli](https://www.version2.dk/artikel/https-skat-lover-krypteret-forbindelse-1-juli-1085110), Version2 2018. [[Backup](/img/skat_version2.png)]
-
-[Skats hjemmeside er ikke en sikker forbindelse](https://www.dr.dk/ligetil/indland/skats-hjemmeside-er-ikke-en-sikker-forbindelse), DR 2018. [[Backup](/img/skat_dr_2018_2.png)]
-
-[Sikkerhedshul på Skats hjemmeside: "Det er kritisk"](https://www.dr.dk/nyheder/viden/teknologi/sikkerhedshul-paa-skats-hjemmeside-det-er-kritisk), DR 2018. [[Backup](/img/skat_dr_2018.png)]
-
-
-
+### Other
+- [Kunstig intelligens lider også af menneskelige fejl](https://videnskab.dk/teknologi-innovation/kunstig-intelligens-lider-ogsaa-af-menneskelige-fejl), Videnskab.dk 2019. [[Backup](/img/videnskabdk.jpg)]
