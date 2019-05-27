@@ -1,12 +1,10 @@
 sudo: false
 
-language: go
-
 go:
-  - master
+  - 1.13
 
 install:
-  - go get github.com/spf13/hugo
+  - go get github.com/gohugoio/hugo
   - npm install -g sass
 
 script:
