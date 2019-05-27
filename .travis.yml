@@ -1,0 +1,25 @@
+language: go
+
+go:
+  - master
+
+install:
+  - go get github.com/spf13/hugo
+  - npm install -g sass
+
+script:
+  - mkdir -p themes/tpanum/static/css
+  - sass --update themes/tpanum/scss:themes/tpanum/static/css --style compressed
+  - hugo
+
+deploy:
+  local_dir: public
+  repo: tpanum/tpanum.github.io
+  target_branch: master
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  email: thomas@panum.dk
+  name: "tpanum"
+  on:
+    branch: master

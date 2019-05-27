@@ -2,7 +2,8 @@
 date = "2017-04-03T20:00:00+02:00"
 draft = false
 title = "The Robot That Got Me a Home In Copenhagen"
-category = "programming"
+keywords = [ "programming" ]
+description = "Solution for automating apartment hunting in Copenhagen"
 +++
 Everyone knows the struggle of getting an apartment in Copenhagen.
 It is a tough task, and a decent network is surely very valuable in that regard.

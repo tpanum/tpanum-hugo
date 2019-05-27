@@ -2,6 +2,8 @@
 date = "2018-08-10T12:00:00+02:00"
 draft = false
 title = "Disable Bouncer Playback Spam for Emacs Circe Notifications"
+description = "Code snippet for disabling playback spam in Emacs IRC client"
+keywords = [ "emacs" ]
 +++
 I recently changed to using [circe](https://github.com/jorgenschaefer/circe) as my everyday IRC client.
 Despite the [circe-notifications](https://github.com/eqyiel/circe-notifications) being featureful, the suggested way to reduce notification spam from your irc bouncer is a bit of a hack.

@@ -1,0 +1,40 @@
+{{ define "main" }}
+<main>
+    <h1 data-icon="">Publications</h1>
+    <p>
+	As a researcher most of my work are available as publications in the form of peer-reviewed scientific articles and journals.
+	If you have questions or comments about my publications, <a href="/contact/">send me an email</a>.
+    </p>
+    {{ range .Data.Pages.GroupByDate "2006" }}
+    <h2 id="{{ .Key }}"><a href="#{{ .Key }}">Published in {{ .Key }}</a></h2>
+    <ul class="publications">
+	{{ range .Pages.ByDate.Reverse }}
+	<li>
+	    <p class="head">
+		<span class="title"><a href="/">{{ .Params.name}}</a></span>
+		<span class="kind">{{ .Params.kind }}</span>
+	    </p>
+	    <p class="mid">
+		<span class="authors">
+		    {{ range $i, $e := .Params.authors }}{{ if $i }}, {{ end }}<span{{ if eq . $.Site.Params.author}} class="me"{{end}}>{{ . }}</span>{{ end }}
+		</span>
+		<span class="year">
+		    {{ .Date.Format "2006" }}
+		</span>
+	    </p>
+	    <p class="details">
+		<span class="publisher">{{ .Params.publisher }}</span>
+	    </p>
+	</li>
+	{{ end }}
+    </ul>
+    {{ end }}
+</main>
+<aside>
+    <h2 data-icon="&#xf2b5;">Collaboration</h2>
+    <p>
+	Genuinely, I enjoy discussing and collaboration with others.
+	If you are interessted in collaborating with me don't hesitate to <a href="/contact/">contact me</a>.
+    </p>
+</aside>
+{{ end }}

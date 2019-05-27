@@ -2,7 +2,8 @@
 date = "2016-06-12T13:44:52+02:00"
 draft = false
 title = "Hello Hugo!"
-category = "programming"
+keywords = [ "programming" ]
+description = "First blog post for new blog platform"
 +++
 About every second year, I suddenly feel the urge to change the layout of my blog.
 This usually leads to not only a visual face-lift of the blog, but also an excuse to give into new technologies that have emerged within the last years.

@@ -1,34 +1,27 @@
 baseurl = "https://panum.dk/"
 relativeurls = true
-theme = "hugo-renga"
+theme = "tpanum"
 builddrafts = true
-canonifyurls = true
+canonifyurls = false
 contentdir = "content"
 languageCode = "en-US"
 layoutdir = "layouts"
 publishdir = "public"
 staticdir = "static"
-author = "Thomas Kobber Panum"
 title = "Thomas Kobber Panum"
-disqusshortname = ""
-pluralizelisttitles = false
 
 [permalinks]
 blog = "blog/:slug/"
 
-
 [params]
+author = "Thomas Kobber Panum"
+description = "Thomas Kobber Panum"
+
 dateform = "2. January, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
-description = "Thomas Kobber Panum"
 copyright = "Copyright © 2019 Thomas Kobber Panum"
-logofile = "img/me_circle.png"
-faviconfile = "img/favicon.png"
-highlightjs = true
-uselatex = true
-progressively = false
-align_left = false
-lang = "en"
+profilepic = "/img/me.png"
+faviconfile = "/img/favicon.png"
 
 github = "tpanum"
 email = "thomas_atsign_panum.dk"
@@ -36,40 +29,38 @@ linkedin = "tpanum"
 twitter = "tpanum"
 
 latestpostcount = 5
-social_banner = "img/favicon.png"
-posts_navigation = true
 
 name="Thomas Kobber Panum"
 position="Ph.D. Student"
 company="Wireless Communication Networks, Aalborg University"
-companyURL="http://aau.dk/"
+companyURL="http://aau.dk"
 
 [[menu.primary]]
 identifier = "publications"
 name = "Publications"
-url = "/publications/"
+url = "/publication"
 weight = 1
 
 [[menu.primary]]
-identifier = "talks"
-name = "Talks"
-url = "/talks/"
+identifier = "dissmenination"
+name = "Dissemination"
+url = "/dissemination"
 weight = 2
-
-[[menu.primary]]
-identifier = "press"
-name = "Press"
-url = "/press/"
-weight = 3
 
 [[menu.primary]]
 identifier = "teaching"
 name = "Teaching"
-url = "/teaching/"
+url = "/teaching"
+weight = 3
+
+[[menu.primary]]
+identifier = "contact"
+name = "Contact"
+url = "/contact"
 weight = 4
 
 [[menu.primary]]
 identifier = "blog"
 name = "Blog"
-url = "/blog/"
+url = "/blog"
 weight = 5

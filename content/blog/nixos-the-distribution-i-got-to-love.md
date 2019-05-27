@@ -2,6 +2,8 @@
 date = "2018-06-14T12:00:00+02:00"
 draft = false
 title = "NixOS: The distribution I got to love"
+description = "The choice of Linux-based operating system for my PhD studies"
+keywords = [ "linux", "phd" ]
 +++
 As I started my PhD studies I was faced with the choice of deciding my own hardware setup for the next 3 years, as long as I used the bureaucratic supply contract and kept a certain budget.
 I could easily see that getting a 15" MacBook Pro and an external monitor would blow the budget, so I quickly decided I wanted to adopt Linux full-time.

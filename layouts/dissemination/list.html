@@ -1,0 +1,58 @@
+{{ define "main" }}
+<main>
+    <h1 data-icon="">Dissemination</h1>
+    <p>
+	Being a researcher, I believe knowledge has no value if not being shared.
+	Communication, in the form of dissemination, is thereby essential for both me and my work.
+	You can find a list of disseminations related to my research below.
+	
+    </p>
+{{ range .Data.Pages.GroupByParam "kind" }}
+<h2 id="{{ .Key }}"><a href="#{{ .Key }}">{{ humanize .Key }}</a></h2>
+<ul class="dissemination {{ lower .Key }}">
+    {{ range .Pages.ByDate.Reverse }}
+    <li>
+	<p class="head">
+	    <span class="title">
+		{{ if .Params.link }}
+		<a class="external" href="{{ .Params.link }}" target="_blank">{{ .Params.name }}</a>
+		{{ else }}
+	    {{ .Params.name }}
+		{{ end }}
+	    </span>
+	    {{ if .Params.backup_url }}
+	    <span class="backup"><a data-icon="" href="{{ .Params.backup_url }}" target="_blank">Backup</a></span>
+	    {{ end }}
+	</p>
+	<p class="mid">
+	    {{ if .Params.publisher}}<span class="publisher">{{ .Params.publisher }}</span>{{ end }}
+	    {{ if .Params.description }}<span class="description">{{ .Params.description }}</span>{{ end }}
+	    {{ if .Params.date }}<span class="year">{{ .Date.Format "January 2006" }}</span>{{ end }}
+	</p>
+	{{ if .Params.talks }}
+	<p class="tail">
+	    <ul>
+	    {{ range .Params.talks }}
+	    <li>{{ . }}</li>
+	    {{ end }}
+	    </ul>
+	</p>
+	{{ end }}
+    </li>
+    {{ end }}
+</ul>
+{{ end }}
+</main>
+<aside>
+    <h2 data-icon="&#xe805;">Giving talks</h2>
+    Speaking about my research field, in a both technical and more publical accesible fashion, are enjoyable to me.
+    Feel free to contact me if you believe I could give a valuable presentation in your setting.
+    <p>
+    </p>
+    <h2 data-icon="&#xe804;">Writing articles</h2>
+    <p>
+	If you want me to write an article for your media.
+	Send me <a href="/contact/">an email</a> with the conditions and hopefully we can arrange it.
+    </p>
+</aside>
+{{ end }}

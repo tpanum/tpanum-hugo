@@ -2,6 +2,8 @@
 date = "2019-01-10T12:00:00+02:00"
 draft = false
 title = "NixOS: One Year In (I'm still in love)"
+keywords = [ "nixos", "linux" ]
+description = "One year of NixOS usage in review"
 +++
 
 As I have written in a [previous post](/blog/nixos-the-distribution-i-got-to-love), I switched to [NixOS](https://nixos.org/) from [OS X](https://en.wikipedia.org/wiki/MacOS).

@@ -1,8 +1,13 @@
-My name is **Thomas Kobber Panum**, and I am currently employed as a Ph.D. Student at Department of Electronic Systems, [Aalborg University (AAU)](https://aau.dk).
-Historically speaking, I obtained my M.Sc. Software Engineering with a specialization in Machine Intelligence ([thesis](http://bit.ly/1O7nEWX)) from [AAU](https://aau.dk) by 2014.
-Before  I came back to academia in December 2017, I worked in industry as a **Data Scientist** across various sectors, namely: medical ([Enversion](http://www.enversion.dk/)), insurance ([Ecsact](http://ecsact.dk/), [Tryg Forsikring](https://tryg.dk/)) and logistics (part of consultancy).
+I am a **PhD student** at [Department of Electronic Systems](https://es.aau.dk), [Aalborg University](https://aau.dk) (AAU) working on **security aspects of machine learning, and applied cases of machine learning in adversarial settings**.
 
-My research interest resides within the field of **security aspects of using machine learning** and **using machine learning to solve security problems**.
-Currently my focus is to **improve the robustness of phishing detection models** through the use of adversarial learning.
+After obtaining a M.Sc. in Machine Intelligence ([thesis](/files/msc_thesis.pdf)) and B.Sc. in Software Engineering from AAU, I went onto become a data scientist and utilize machine learning for a variety of business applications.
+These applications spanned across multiple fields, such as: medical ([Enversion](https://enversion.dk)), insurance ([Ecsact](https://ecsact.dk), [Tryg Insurance](https://tryg.com)) and logistics ([Ecsact](https://ecsact.dk)).
 
-Non-scientific interest include: classic electronic music, mountain biking, sourdough baking, ergonomic keyboards, and customization of my linux desktop.
+The research conducted throughout my PhD is set out to **improve the robustness of phishing detection models** by a set empirical studies, that leads to more fundamental research that address the underlying methodologies and theories.
+
++++ ASIDE +++
+
+<h2 data-icon="&#xf19d;">Curriculum Vitae</h2>
+<p>
+	You can browse my CV as a PDF through [this link](/files/cv.pdf).
+</p>
