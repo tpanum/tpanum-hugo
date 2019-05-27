@@ -21,6 +21,7 @@ script:
   - mkdir -p themes/tpanum/static/css
   - sass --update themes/tpanum/scss:themes/tpanum/static/css --style compressed
   - hugo
+  - echo panum.dk > public/CNAME
 
 deploy:
   local_dir: public
