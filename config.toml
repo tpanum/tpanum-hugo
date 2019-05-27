@@ -1,5 +1,5 @@
-baseurl = "https://panum.dk/"
-relativeurls = true
+baseurl = "https://panum.dk"
+relativeurls = false
 theme = "tpanum"
 builddrafts = true
 canonifyurls = false
@@ -19,9 +19,7 @@ description = "Thomas Kobber Panum"
 
 dateform = "2. January, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
-copyright = "Copyright © 2019 Thomas Kobber Panum"
 profilepic = "/img/me.png"
-faviconfile = "/img/favicon.png"
 
 github = "tpanum"
 email = "thomas_atsign_panum.dk"
@@ -32,8 +30,6 @@ latestpostcount = 5
 
 name="Thomas Kobber Panum"
 position="Ph.D. Student"
-company="Wireless Communication Networks, Aalborg University"
-companyURL="http://aau.dk"
 
 [[menu.primary]]
 identifier = "publications"
