@@ -1,11 +1,13 @@
 dist: xenial
 
+language: go
+
 env:
   - GO111MODULE=on
   - GOFLAGS='-mod vendor'
 
 go:
-  - 1.13
+  - 1.12.x
 
 install: true
 
