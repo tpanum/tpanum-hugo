@@ -1,0 +1,20 @@
+<footer>
+    <p>
+	©
+	<span>2019</span>
+	<span>Thomas Kobber Panum, theme is heavily inspired by <a href="https://ruben.verborgh.org" target="_blank">Ruben Verborgh's website.</a></span>
+	<br>
+	Content of this website, text and images, is licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" title="Creative Commons Attribution 4.0 International License"><abbr class="caps">CC</abbr> <abbr class="caps">BY</abbr> 4.0</a> except where otherwise noted.
+    </p>
+    <ul class="profiles">
+	{{ if .Site.Params.twitter }}
+	<li><a data-icon="" href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank">Twitter</a></li>
+	{{ end }}
+	{{ if .Site.Params.github }}
+	<li><a data-icon="" href="https://github.com/{{ .Site.Params.github }}" target="_blank" rel="author">GitHub</a></li>
+	{{ end }}
+	{{ if .Site.Params.linkedin }}
+	<li><a data-icon="" href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank">LinkedIn</a></li>
+	{{ end }}
+    </ul>
+</footer>

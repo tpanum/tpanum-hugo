@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ $cols := split .Content "+++ ASIDE +++" }}
+{{ range $i, $e := $cols }}
+{{ if eq $i 0 }}
+<main>
+    {{ . | markdownify }}
+</main>
+{{ else }}
+<aside>
+   {{ . | markdownify }}
+</aside>
+{{ end }}
+{{ end }}
+{{ end }}

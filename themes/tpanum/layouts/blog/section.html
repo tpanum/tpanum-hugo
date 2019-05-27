@@ -1,0 +1,22 @@
+{{ define "main" }}
+<main>
+    <h1 data-icon="">Blog</h1>
+    <ul class="blog">
+	{{ range sort .Data.Pages "Date" "desc" }}
+	<li>
+	    <p class="head">
+		<span class="title"><a class="blogpost" href="{{ .Permalink }}">{{ .Title }}</a></span>
+		<span>{{ .Date.Format "Jan 2006" }}</span>
+	    </p>
+	    <p class="mid">
+		<span class="description">{{ .Params.description }}</span>
+		<span class="tags">
+		{{ range sort .Keywords }}
+		<span class="tag">{{ . }}</span>
+		{{ end }}
+		</span>
+	    </p>
+	{{ end }}
+    </ul>
+</main>
+{{ end }}

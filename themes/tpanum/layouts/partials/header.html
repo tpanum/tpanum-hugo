@@ -1,0 +1,13 @@
+<header>
+    <a href="{{ .Site.BaseURL }}">
+	<img src="{{ .Site.Params.profilepic | absURL }}">
+	<h1>{{ .Site.Title }}</h1>
+    </a>
+    <nav>
+	<ul>
+	    {{ range .Site.Menus.primary.ByWeight }}
+	    <li><a href="{{ .URL }}">{{ .Pre}}{{ .Name }}</a></li>
+	    {{ end }}
+	</ul>
+    </nav>
+</header>
