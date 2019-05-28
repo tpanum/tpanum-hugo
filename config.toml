@@ -34,29 +34,29 @@ position="Ph.D. Student"
 [[menu.primary]]
 identifier = "publications"
 name = "Publications"
-url = "/publication"
+url = "/publication/"
 weight = 1
 
 [[menu.primary]]
 identifier = "dissmenination"
 name = "Dissemination"
-url = "/dissemination"
+url = "/dissemination/"
 weight = 2
 
 [[menu.primary]]
 identifier = "teaching"
 name = "Teaching"
-url = "/teaching"
+url = "/teaching/"
 weight = 3
 
 [[menu.primary]]
 identifier = "contact"
 name = "Contact"
-url = "/contact"
+url = "/contact/"
 weight = 4
 
 [[menu.primary]]
 identifier = "blog"
 name = "Blog"
-url = "/blog"
+url = "/blog/"
 weight = 5
