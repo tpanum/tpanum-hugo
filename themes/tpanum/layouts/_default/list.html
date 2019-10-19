@@ -1,0 +1,10 @@
+{{ define "main" }}
+<main>
+    <h1 {{ printf "data-icon=%q" $.Params.icon | safeHTMLAttr }}>{{ $.Title }}</h1>
+    {{ replaceRE "<aside.*?>(.|\n)*?</aside>" "" .Content | safeHTML }}
+</main>
+{{ $aside := findRE "<aside.*?>(.|\n)*?</aside>" .Content 1 }}
+{{ if $aside}}
+	{{ (index $aside 0) | safeHTML }}
+{{ end }}
+{{ end }}

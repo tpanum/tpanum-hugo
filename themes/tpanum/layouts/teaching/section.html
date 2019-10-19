@@ -1,0 +1,30 @@
+{{ define "main" }}
+<main>
+    <h1 {{ printf "data-icon=%q" .Params.icon | safeHTMLAttr }}>{{ .Title }}</h1>
+    {{ replaceRE "<aside.*?>(.|\n)*?</aside>" "" .Content | safeHTML }}
+	{{ range .Data.Pages.GroupByParam "kind" }}
+	<h2 id="{{ .Key }}"><a href="#{{ .Key }}">{{ .Key | humanize | pluralize }}</a></h2>
+	<ul class="teaching {{ lower .Key }}">
+	    {{ range .Pages.ByDate.Reverse }}
+	    <li>
+		<p class="head">
+		    <span class="title">
+			{{ .Title }}
+			{{ if .Params.credit }}<span class="credit">&mdash; {{ .Params.credit }}</span>{{ end }}
+		    </span>
+		    {{ if .Params.period }}<span class="period">{{ .Params.period }}</span>{{ end }}
+		</p>
+		<p class="mid">
+		    {{ if .Params.description }}<span class="description">{{ .Params.description }}</span>{{ end }}
+		    {{ if .Params.host}}<span class="host">{{ .Params.host }}</span>{{ end }}
+		</p>
+	    </li>
+	    {{ end }}
+	</ul>
+	{{ end }}
+</main>
+{{ $aside := findRE "<aside.*?>(.|\n)*?</aside>" .Content 1 }}
+    {{ if $aside}}
+    {{ (index $aside 0) | safeHTML }}
+    {{ end }}
+{{ end }}

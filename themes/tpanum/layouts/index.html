@@ -1,14 +1,9 @@
 {{ define "main" }}
-{{ $cols := split .Content "+++ ASIDE +++" }}
-{{ range $i, $e := $cols }}
-{{ if eq $i 0 }}
 <main>
-    {{ . | markdownify }}
+    {{ replaceRE "<aside.*?>(.|\n)*?</aside>" "" .Content | safeHTML }}
 </main>
-{{ else }}
-<aside>
-   {{ . | markdownify }}
-</aside>
-{{ end }}
+{{ $aside := findRE "<aside.*?>(.|\n)*?</aside>" .Content 1 }}
+{{ if $aside}}
+	{{ (index $aside 0) | safeHTML }}
 {{ end }}
 {{ end }}

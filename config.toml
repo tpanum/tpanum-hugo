@@ -1,24 +1,10 @@
-baseurl = "https://panum.dk"
-relativeurls = false
-theme = "tpanum"
-builddrafts = true
-canonifyurls = false
-contentdir = "content"
-languageCode = "en-US"
-layoutdir = "layouts"
-publishdir = "public"
-staticdir = "static"
+baseURL = "http://example.org/"
+languageCode = "en-us"
 title = "Thomas Kobber Panum"
-
-[permalinks]
-blog = "blog/:slug/"
+theme = "tpanum"
 
 [params]
 author = "Thomas Kobber Panum"
-description = "Thomas Kobber Panum"
-
-dateform = "2. January, 2006"
-dateformfull = "Mon Jan 2 2006 15:04:05 MST"
 profilepic = "/img/me.png"
 
 github = "tpanum"
@@ -27,36 +13,3 @@ linkedin = "tpanum"
 twitter = "tpanum"
 
 latestpostcount = 5
-
-name="Thomas Kobber Panum"
-position="Ph.D. Student"
-
-[[menu.primary]]
-identifier = "publications"
-name = "Publications"
-url = "/publication/"
-weight = 1
-
-[[menu.primary]]
-identifier = "dissmenination"
-name = "Dissemination"
-url = "/dissemination/"
-weight = 2
-
-[[menu.primary]]
-identifier = "teaching"
-name = "Teaching"
-url = "/teaching/"
-weight = 3
-
-[[menu.primary]]
-identifier = "contact"
-name = "Contact"
-url = "/contact/"
-weight = 4
-
-[[menu.primary]]
-identifier = "blog"
-name = "Blog"
-url = "/blog/"
-weight = 5

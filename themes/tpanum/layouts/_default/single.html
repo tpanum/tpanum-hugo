@@ -1,15 +1,11 @@
 {{ define "main" }}
-{{ $cols := split .Content "+++ ASIDE +++" }}
-{{ range $i, $e := $cols }}
-{{ if eq $i 0 }}
 <main>
     <h1 {{ printf "data-icon=%q" $.Params.icon | safeHTMLAttr }}>{{ $.Title }}</h1>
     {{ . | markdownify }}
+    {{ replaceRE "<aside.*?>(.|\n)*?</aside>" "" .Content | safeHTML }}
 </main>
-{{ else }}
-<aside>
-   {{ . | markdownify }}
-</aside>
-{{ end }}
+{{ $aside := findRE "<aside.*?>(.|\n)*?</aside>" .Content 1 }}
+{{ if $aside}}
+	{{ (index $aside 0) | safeHTML }}
 {{ end }}
 {{ end }}
