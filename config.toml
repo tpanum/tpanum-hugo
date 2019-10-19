@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://panum.dk/"
 languageCode = "en-us"
 title = "Thomas Kobber Panum"
 theme = "tpanum"
