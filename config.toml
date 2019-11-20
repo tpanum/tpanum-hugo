@@ -5,11 +5,20 @@ theme = "tpanum"
 
 [params]
 author = "Thomas Kobber Panum"
-profilepic = "/img/me.png"
-
+default_profilepic = "/img/me_x1.png"
 github = "tpanum"
 email = "thomas_atsign_panum.dk"
 linkedin = "tpanum"
 twitter = "tpanum"
 
 latestpostcount = 5
+
+[[params.profilepictures]]
+path = "/img/me_x1.png"
+path_hidpi = "/img/me_x1.png"
+format = "image/png"
+
+[[params.profilepictures]]
+path = "/img/me_x1.webp"
+path_hidpi = "/img/me_x2.webp"
+format = "image/webp"

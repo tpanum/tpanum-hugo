@@ -1,6 +1,13 @@
 <header>
     <a href="{{ .Site.BaseURL }}">
-	<img src="{{ .Site.Params.profilepic | absURL }}">
+	<picture>
+	    {{ range .Site.Params.profilepictures }}
+	    <source src="{{ .path | absURL }}" {{ if .path_hidpi }}srcset="{{ .path_hidpi | absURL }} 2x"{{ end }} type="{{ .format }}">
+	    {{ end }}
+	    {{ if .Site.Params.default_profilepic }}
+	    <img src="{{ .Site.Params.default_profilepic | absURL }}" alt="{{ .Site.Params.author }}">
+	    {{ end }}
+	</picture>
 	<h1>{{ .Site.Title }}</h1>
     </a>
     <nav>
