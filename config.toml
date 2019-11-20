@@ -14,11 +14,11 @@ twitter = "tpanum"
 latestpostcount = 5
 
 [[params.profilepictures]]
-path = "/img/me_x1.png"
-path_hidpi = "/img/me_x1.png"
-format = "image/png"
-
-[[params.profilepictures]]
 path = "/img/me_x1.webp"
 path_hidpi = "/img/me_x2.webp"
 format = "image/webp"
+
+[[params.profilepictures]]
+path = "/img/me_x1.png"
+path_hidpi = "/img/me_x2.png"
+format = "image/png"
