@@ -78,7 +78,7 @@ This is Kraaler
 
 Being a researcher, I believe knowledge has no value if not being shared.
 Communication, in the form of dissemination, is thereby essential for both me and my work.
-You can find a list of dissemination related to my research below. 
+You can find a list of dissemination related to my research below.
 
 <aside>
     <h2 data-icon="&#xe805;">Giving talks</h2>
@@ -153,7 +153,7 @@ You can find a list of dissemination related to my research below.
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :icon "&#xf19d;"
 :END:
 
- I sincerely like to teach, and believe it is an important duty for any researcher, as a step towards dissemination. 
+ I sincerely like to teach, and believe it is an important duty for any researcher, as a step towards dissemination.
 
 <aside>
     <h2 data-icon="&#xf1ae;">Guest lectures</h2>
@@ -169,7 +169,7 @@ You can find a list of dissemination related to my research below.
 :EXPORT_FILE_NAME: general_programming
 :EXPORT_DATE: 2013-02-01T11:16:34+02:00
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :kind course
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 5 ETCS
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 5 ECTS
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :period Spring 2013
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :host Aalborg University
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :description Teaching assistant of Anders Bruun's course
@@ -180,7 +180,7 @@ You can find a list of dissemination related to my research below.
 :EXPORT_FILE_NAME: ooad
 :EXPORT_DATE: 2012-09-01T11:16:34+02:00
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :kind course
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 5 ETCS
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 5 ECTS
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :period Fall 2012
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :host Aalborg University
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :description Teaching assistant of Lise Tordrup Heeager's course
@@ -191,7 +191,7 @@ You can find a list of dissemination related to my research below.
 :EXPORT_FILE_NAME: pss
 :EXPORT_DATE: 2019-04-01T15:18:34+02:00
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :kind course
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 5 ETCS
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 5 ECTS
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :period Spring 2018, 2019
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :host Aalborg University
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :description Guest lecture on practical security and vulnabilities
@@ -202,7 +202,7 @@ You can find a list of dissemination related to my research below.
 :EXPORT_FILE_NAME: secure_software
 :EXPORT_DATE: 2018-08-01T23:06:04+02:00
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :kind course
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 5 ETCS
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 5 ECTS
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :period Autumn 2018
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :host IT Vest, Aalborg University
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :description Taught in collaboration with René Rydhof Hansen
@@ -213,7 +213,7 @@ You can find a list of dissemination related to my research below.
 :EXPORT_FILE_NAME: secure_software_practice
 :EXPORT_DATE: 2019-01-01T22:40:38+02:00
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :kind course
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 5 ETCS
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 5 ECTS
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :period Spring 2019
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :host IT Vest, Aalborg University
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :description Taught in collaboration with René Rydhof Hansen
@@ -224,7 +224,7 @@ You can find a list of dissemination related to my research below.
 :EXPORT_FILE_NAME: security_web
 :EXPORT_DATE: 2018-10-01T23:03:36+02:00
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :kind course
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 5 ETCS
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 5 ECTS
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :period Autumn 2018
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :host IT Vest, Aalborg University
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :description Taught in collaboration with René Rydhof Hansen
@@ -235,7 +235,7 @@ You can find a list of dissemination related to my research below.
 :EXPORT_FILE_NAME: system_development
 :EXPORT_DATE: 2011-02-01T11:16:34+02:00
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :kind course
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 5 ETCS
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 5 ECTS
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :period Spring 2011
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :host Aalborg University
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :description Teaching assistant of Anders Bruun's course
@@ -245,7 +245,7 @@ You can find a list of dissemination related to my research below.
 :EXPORT_FILE_NAME: traffic_analysis_network_sec
 :EXPORT_DATE: 2017-12-01T23:08:53+02:00
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :kind course
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 5 ETCS
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 5 ECTS
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :period Winter 2017
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :host Aalborg University
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :description Taught in collaboration with Kaspar Hageman and Jens Myrup Pedersen
@@ -256,7 +256,7 @@ You can find a list of dissemination related to my research below.
 :EXPORT_FILE_NAME: bsc_comp_sci_18
 :EXPORT_DATE: 2018-02-02T23:19:46+02:00
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :kind supervision
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 15 ETCS
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 15 ECTS
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :period Spring 2018
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :host Aalborg University
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :description A group of six students.
@@ -267,7 +267,7 @@ You can find a list of dissemination related to my research below.
 :EXPORT_FILE_NAME: msc_comp_sci_19
 :EXPORT_DATE: 2019-02-02T23:12:41+02:00
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :kind supervision
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 15 ETCS
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 15 ECTS
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :period Spring 2019
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :host Aalborg University
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :description Co-supervised a group of two students for their master thesis
@@ -278,7 +278,7 @@ You can find a list of dissemination related to my research below.
 :EXPORT_FILE_NAME: bsc_sw_15
 :EXPORT_DATE: 2015-02-02T23:12:41+02:00
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :kind supervision
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 15 ETCS
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 15 ECTS
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :period Spring 2015
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :host Aalborg University
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :description Six groups of a total 31 students
@@ -290,7 +290,7 @@ You can find a list of dissemination related to my research below.
 :EXPORT_DATE: 2019-02-01T23:23:27+02:00
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :kind supervision
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :period Spring 2019
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 15 ETCS
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :credit 15 ECTS
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :host Aalborg University
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :description A group of six students
 :END:
@@ -461,7 +461,7 @@ Needless to say, the touch bar is god awful and is simply a tool to steal space 
 With that frustration in mind, I decided to picking up the *Lenovo ThinkPad T470s*.
 
 #+html: <center>
-#+ATTR_HTML: :width 70% 
+#+ATTR_HTML: :width 70%
 [[file:img/t470s.jpg]]
 #+html: </center>
 
@@ -478,7 +478,7 @@ It claimed that it was "Declarative" (e.g. less time configuring) and "Reliable
 
 *** NixOS
 #+html: <center>
-#+ATTR_HTML: :width 20% 
+#+ATTR_HTML: :width 20%
 [[file:img/nixos_logo.png]]
 #+html: </center>
 
@@ -519,7 +519,7 @@ When you run the =nixos-generate-config= during install, you will be receiving a
     # environment.systemPackages = with pkgs; [
     #   wget vim
     # ];
-    
+
     # ...
 
     # Open ports in the firewall.
@@ -574,7 +574,7 @@ Despite the [[https://github.com/eqyiel/circe-notifications][circe-notifications
 As stated in the readme, simply delay the activation hook by /x/ seconds and pray it is large enough for missing all notifcations during playback.
 
 #+html: <center>
-#+ATTR_HTML: :width 70% 
+#+ATTR_HTML: :width 70%
 [[file:img/team_chat.png]]
 #+html: </center>
 
@@ -625,7 +625,7 @@ Where are we today? As of writing, I have been using the [[https://wiki.archlinu
 Realizing the unchangeable quirks of many other hotkey daemons, I realized how I missed sxhkd's ability to do /exactly like I wanted/.
 
 #+html: <center>
-#+ATTR_HTML: :width 70% 
+#+ATTR_HTML: :width 70%
 [[file:img/my_desktop_2019.png][file:img/my_desktop_2019_small.png]]
 #+html: </center>
 
@@ -665,7 +665,7 @@ The script is very efficient (thanks to =fzf=) at searching, even in deeply nest
 You can see a preview of the whole process below, and find the script.
 
 #+html: <center>
-#+ATTR_HTML: :width 70% 
+#+ATTR_HTML: :width 70%
 [[file:img/fzf-open.gif][file:img/fzf-open.gif]]
 #+html: </center>
 
