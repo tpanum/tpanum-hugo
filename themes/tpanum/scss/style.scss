@@ -7,22 +7,26 @@ $sidebar-width: 300px;
 
 @font-face {
     font-family:'Fira Sans';
+    font-display: auto;
     src:local('Fira Sans'), local('FiraSans-Regular'), url('/font/FiraSans-Regular.woff2') format('woff2'), url('/font/FiraSans-Regular.woff') format('woff')
 }
 
 @font-face {
     font-family:'Fira Sans';
+    font-display: auto;
     font-style:italic;
     src:local('Fira Sans Italic'), local('FiraSans-Italic'), url('/font/FiraSans-Italic.woff2') format('woff2'), url('/font/FiraSans-Italic.woff') format('woff')
 }
 
 @font-face {
     font-family:'Fira Sans';
+    font-display: auto;
     font-weight:700;
     src:local('Fira Sans Bold'), local('FiraSans-Bold'), url('/font/FiraSans-Bold.woff2') format('woff2'), url('/font/FiraSans-Bold.woff') format('woff')
 }
 @font-face {
     font-family:'Fira Sans';
+    font-display: auto;
     font-weight:700;
     font-style:italic;
     src:local('Fira Sans Bold Italic'), local('FiraSans-BoldItalic'), url('/font/FiraSans-BoldItalic.woff2') format('woff2'), url('/font/FiraSans-BoldItalic.woff') format('woff')
@@ -30,6 +34,7 @@ $sidebar-width: 300px;
 
 @font-face{
     font-family:"tpanum-icons";
+    font-display: auto;
     src:url('../font/tpanum-icons.eot?#') format('eot'),url('../font/tpanum-icons.woff2') format('woff2'),url('../font/tpanum-icons.woff') format('woff'),url('../font/tpanum-icons.ttf') format('truetype'),url('../font/tpanum-icons.svg#tpanum-icons') format('svg');
     font-weight:400;
     font-style:normal

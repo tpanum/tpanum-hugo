@@ -5,6 +5,7 @@ theme = "tpanum"
 
 [params]
 author = "Thomas Kobber Panum"
+htmlLang = "en"
 default_profilepic = "/img/me_x1.png"
 github = "tpanum"
 email = "thomas_atsign_panum.dk"
