@@ -19,6 +19,7 @@ install:
 
 script:
   - docker run --rm -v $(pwd):/site -w /site silex/emacs:master-alpine emacs blog.org --load org-config.el --batch -f tpanum/compile
+  - rm -f themes/tpanum/static/css
   - mkdir -p themes/tpanum/static/css
   - sass --update themes/tpanum/scss:themes/tpanum/static/css --style compressed
   - hugo
