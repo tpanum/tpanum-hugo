@@ -4,6 +4,7 @@ $third: #4F6D7A;
 $fourth: #BE6E46;
 $main-background: #fffffa;
 $sidebar-width: 300px;
+$pagewidth: 1080px;
 
 @font-face {
     font-family:'Fira Sans';
@@ -52,9 +53,14 @@ $sidebar-width: 300px;
     display:inline-block
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 html {
     height: 100%;
     background: #f3f3f3;
+    overflow-y: scroll;
 }
 
 a, a::before {
@@ -65,36 +71,50 @@ a, a::before {
 }
 
 body {
-    background:$main-background;
-    background:$main-background -webkit-linear-gradient($secondary 0, $secondary 100%) right top / $sidebar-width 100% no-repeat;
-    background:$main-background linear-gradient($secondary 0, $secondary 100%) right top / $sidebar-width 100% no-repeat;
-
     font-family: "Fira Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    line-height: 26px;
-    max-width: 980px;
-    min-height: 100%;
-    margin: 0 auto;
+    height: 100%;
+    margin: 0;
 
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: auto 1fr auto;
-    grid-template-rows: auto 1fr auto;
-    -ms-grid-columns: 1fr $sidebar-width;
-    grid-template-columns: 1fr $sidebar-width;
-    grid-template-areas: "header header" "main aside" "footer footer";
+    .headerbck {
+	position: absolute;
+	top: 0;
+	border-bottom: 1px solid $primary;
+	background: $main-background;
+	width: 100%;
+	height: 75px;
+    }
+
+    #grid {
+	max-width: 1080px;
+	background:$main-background;
+	background:$main-background -webkit-linear-gradient($secondary 0, $secondary 100%) right top / $sidebar-width 100% no-repeat;
+	background:$main-background linear-gradient($secondary 0, $secondary 100%) right top / $sidebar-width 100% no-repeat;
+
+	line-height: 26px;
+	min-height: 100%;
+	margin: 0 auto;
+
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-rows: auto 1fr auto;
+	grid-template-rows: auto 1fr auto;
+	-ms-grid-columns: 1fr $sidebar-width;
+	grid-template-columns: 1fr $sidebar-width;
+	grid-template-areas: "header header" "main aside" "footer footer";
+    }
 }
 
 header {
     position: relative;
     grid-area: header;
-    padding: 2em 0 0 ;
+    padding: .5em 0 0 0;
     background: transparent;
 
     $offset: 125px;
 
-    h1 {
-	margin: 0 0 0 $offset;
-	font-size: 28px;
+    h2 {
+	margin: 0 0 0 $offset - 1px;
+	font-size: 16px;
     }
 
     img {
@@ -103,24 +123,29 @@ header {
 	z-index: 3;
 	border-radius: 50px;
 	left: $offset - 105px;
-	bottom: -11px;
-	border: 5px solid $primary;
+	bottom: -15px;
+	border: 2px solid $primary;
     }
 
     nav {
 	position: relative;
-	background: $primary;
+	margin: -.5em 0 0.5em -10px;
 	color: $third;
 	z-index: 2;
 
 	ul {
 	    margin: 5px 0 0 0;
-	    padding: 0 0 0 $offset - 12px;
+	    padding: 0 0 0 $offset + 8px;
 
 	    li {
 		display: inline-block;
 		margin-right: 5px;
-		padding: 4px 12px;
+		padding: 4px 2px;
+		border-bottom: 2px solid transparent;
+
+		&.active {
+		    border-bottom: 2px solid $fourth;
+		}
 	    }
 	}
     }

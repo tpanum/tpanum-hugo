@@ -8,12 +8,23 @@
 	    <img src="{{ .Site.Params.default_profilepic | absURL }}" alt="{{ .Site.Params.author }}">
 	    {{ end }}
 	</picture>
-	<h1>{{ .Site.Title }}</h1>
+	<h2>{{ .Site.Title }}</h2>
     </a>
     <nav>
 	<ul>
-	    {{ range .Site.Menus.primary.ByWeight }}
-	    <li><a href="{{ .URL }}">{{ .Pre}}{{ .Name }}</a></li>
+	    {{ $current := .}}
+	    {{ range $i, $nav := .Site.Menus.primary.ByWeight }}
+	    {{ if $i }}
+	    <li>&#183;</li>
+	    {{ end }}
+	    {{ with $nav}}
+
+	    {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+	    {{ $active = or $active (eq .Page $current) }}
+	    {{ $active = or $active (eq .Page.Section $current.Section) }}
+
+	    <li{{ if $active }} class="active"{{ end }}><a href="{{ .URL }}">{{ .Pre}}{{ .Name }}</a></li>
+	    {{ end }}
 	    {{ end }}
 	</ul>
     </nav>

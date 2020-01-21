@@ -2,8 +2,11 @@
 <html lang="{{ .Site.Params.htmlLang }}">
     {{- partial "head.html" . -}}
     <body>
-        {{- partial "header.html" . -}}
-        {{- block "main" . }}{{- end }}
-        {{- partial "footer.html" . -}}
+	<div class="headerbck"></div>
+	<div id="grid">
+	    {{- partial "header.html" . -}}
+	    {{- block "main" . }}{{- end }}
+	    {{- partial "footer.html" . -}}
+	</div>
     </body>
 </html>
