@@ -21,7 +21,7 @@ script:
   - docker run --rm -v $(pwd):/site -w /site silex/emacs:master-alpine emacs blog.org --load org-config.el --batch -f tpanum/compile
   - mkdir -p themes/tpanum/static/css
   - sass --update themes/tpanum/scss:themes/tpanum/static/css --style compressed
-  - sha256sum themes/tpanum/scss/style.scs
+  - sha256sum themes/tpanum/static/css/style.css
   - hugo
   - echo panum.dk > public/CNAME
 
