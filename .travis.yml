@@ -22,6 +22,7 @@ script:
   - mkdir -p themes/tpanum/static/css
   - sass --update themes/tpanum/scss:themes/tpanum/static/css --style compressed
   - sha256sum themes/tpanum/static/css/style.css
+  - hugo version
   - hugo
   - echo panum.dk > public/CNAME
 

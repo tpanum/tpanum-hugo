@@ -23,3 +23,6 @@ format = "image/webp"
 path = "/img/me_x1.png"
 path_hidpi = "/img/me_x2.png"
 format = "image/png"
+
+[markup.goldmark.renderer]
+unsafe = true
