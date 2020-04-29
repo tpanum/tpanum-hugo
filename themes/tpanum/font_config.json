@@ -95,6 +95,18 @@
       "css": "child",
       "code": 61870,
       "src": "fontawesome"
+    },
+    {
+      "uid": "9daa1fdf0838118518a7e22715e83abc",
+      "css": "file-pdf",
+      "code": 61889,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "f06fe7ff18d1c591bc1183cb3ab105e9",
+      "css": "google",
+      "code": 61856,
+      "src": "fontawesome"
     }
   ]
 }

@@ -44,11 +44,22 @@ If you have questions or comments about my publications, [[/contact/][send me an
 If you are interessted in collaborating with me don't hesitate to <a href="/contact/">contact me</a>.
 </aside>
 
+** CAUSE: Learning Granger Causality from Event Sequences using Attribution Methods
+:PROPERTIES:
+:EXPORT_FILE_NAME: cause
+:EXPORT_DATE: 2020-02-18:00:00+02:00
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :link https://arxiv.org/abs/2002.07906
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :pdflink https://arxiv.org/pdf/2002.07906.pdf
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :venueshort  ICML 2020
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :publisher Proceedings of the 37th International Conference on Machine Learning
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :authors '("Wei Zhang" "Thomas Kobber Panum" "Somesh Jha" "Prasad Chalasani" "David Page")
+:END:
+
 ** Kraaler: A User Perspective Web Crawler
 :PROPERTIES:
 :EXPORT_FILE_NAME: kraaler
 :EXPORT_DATE: 2019-04-01T00:00:00+02:00
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :kind conference
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :venueshort  TMA 2019
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :publisher Proceedings of the 3rd Network Traffic Measurement and Analysis Conference
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :authors '("Thomas Kobber Panum" "René Rydhof Hansen" "Jens Myrup Pedersen")
 :END:
@@ -59,7 +70,7 @@ This is Kraaler
 :PROPERTIES:
 :EXPORT_FILE_NAME: haaukins
 :EXPORT_DATE: 2019-01-15T00:00:00+02:00
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :kind conference
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :venueshort ICALT 2019
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :publisher Proceedings of the 19th IEEE International Conference on Advanced Learning Technologies
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :authors '("Thomas Kobber Panum" "Kaspar Hageman" "Jens Myrup Pedersen" "René Rydhof Hansen")
 :END:
