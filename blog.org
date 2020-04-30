@@ -101,11 +101,21 @@ You can find a list of dissemination related to my research below.
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :talks '("Wiley, Copenhagen (April 2019)" "Copenhagen Business Academy, Lyngby (April 2019)" "AspIT, Aalborg (April 2019)" "IUM, Copenhagen (April 2019)" "LEGO, Billund (April 2019)" "IDA, Aalborg (April 2019)" "Zealand, Slagelse (April 2019)" "IDA, Copenhagen (April 2019)" "IDA, Aarhus (May 2019)")
 :END:
 
+** Efter afsløring af kritisk CPR-hul: Ministerium kræver svar fra IF Forsikring
+:PROPERTIES:
+:EXPORT_FILE_NAME: if_cpr_leak_follow_up
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :kind media
+:EXPORT_DATE: 2020-04-30T06:00:00+02:00
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :publisher Version2
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :link https://www.version2.dk/artikel/efter-afsloering-kritisk-cpr-hul-ministerium-kraever-svar-if-forsikring-1090523
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :backup_url /img/backup/if_cpr_leak2.png
+:END:
+
 ** Kritisk CPR-hack: Forsikringsselskab lod alle og enhver snuse rundt i CPR-registret
 :PROPERTIES:
 :EXPORT_FILE_NAME: if_cpr_leak
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :kind media
-:EXPORT_DATE: 2020-04-29:50:39+02:00
+:EXPORT_DATE: 2020-04-29T06:00:00+02:00
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :publisher Version2
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :link https://www.version2.dk/artikel/kritisk-cpr-hack-forsikringsselskab-lod-alle-enhver-snuse-rundt-cpr-registret-1090515
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :backup_url /img/backup/if_cpr_leak.png
