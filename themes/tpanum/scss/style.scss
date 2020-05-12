@@ -445,10 +445,51 @@ footer {
 }
 
 @media screen and (max-width:950px){
-    body{
-	background: $main-background;
-	-ms-grid-columns:1fr;
-	grid-template-columns:1fr;
-	grid-template-areas:"header" "main" "aside" "footer"
+    body {
+	header {
+	    width: 100%;
+
+	    picture {
+		display: none;
+	    }
+
+	    h2 {
+		margin: 0 auto;
+		text-align: center;
+	    }
+
+	    nav {
+		font-size: 12px;
+		margin: 0;
+
+		ul {
+		    margin: 0;
+		    padding: 0;
+		    text-align: center;
+
+		    li {
+			padding: 4px 0;
+			margin-right: 3px;
+		    }
+		}
+	    }
+	}
+
+	#grid {
+	    background: $main-background;
+	    -ms-grid-columns:1fr;
+	    grid-template-columns:1fr;
+	    grid-template-areas: "header" "main" "footer";
+	}
+
+	main {
+	    h1 {
+		font-size: 1.5em;
+	    }
+	}
+
+	aside {
+	    display: none;
+	}
     }
 }
