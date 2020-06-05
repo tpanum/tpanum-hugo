@@ -8,15 +8,18 @@
 	{{ range .Pages.ByDate.Reverse }}
 	<li>
 	    <p class="head">
-		<span class="title"><a href="/">{{ .Title }}</a></span>
-		<span class="kind">{{ .Params.kind }}</span>
+		{{ if .Params.link }}
+		<span class="title"><a href="{{.Params.link}}" target="_blank">{{ .Title }}</a></span>
+		{{ else }}
+		<span class="title">{{ .Title }}</span>
+		{{ end}}
+		{{ if .Params.venueShort }}
+		<span class="kind">{{ .Params.venueShort }}</span>
+		{{ end }}
 	    </p>
 	    <p class="mid">
 		<span class="authors">
 		    {{ range $i, $e := .Params.authors }}{{ if $i }}, {{ end }}<span{{ if eq . $.Site.Params.author}} class="me"{{end}}>{{ . }}</span>{{ end }}
-		</span>
-		<span class="year">
-		    {{ .Date.Format "2006" }}
 		</span>
 	    </p>
 	    <p class="details">
