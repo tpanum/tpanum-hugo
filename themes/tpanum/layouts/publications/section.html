@@ -23,7 +23,7 @@
 		</span>
 	    </p>
 	    <p class="details">
-		<span class="publisher">{{ .Params.publisher }}</span>
+		<span class="publisher">{{ .Params.publisher }}{{ if .Params.acceptancerate }} &mdash; Acceptance Rate: {{ .Params.acceptancerate }}%{{end}}</span>
 	    </p>
 	</li>
 	{{ end }}

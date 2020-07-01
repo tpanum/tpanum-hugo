@@ -71,6 +71,44 @@ body {
     height: 100%;
     margin: 0;
 
+    blockquote {
+	margin: 2.25em 0 2.5em;
+	font-size: 1.33em;
+	line-height: 1.66;
+	quotes: none;
+
+	p {
+	    font-weight: 700;
+	    text-align: center;
+	    color: $third;
+
+	    &::before {
+		content: "“";
+		position: absolute;
+		margin-left: -0.5em;
+	    }
+
+	    &::after {
+		content: "”";
+		position: absolute;
+	    }
+	}
+
+	cite {
+	    font-size: .9em;
+	    &::before {
+		content: "—";
+	    }
+
+	    .role {
+		&::before {
+		    content: ", ";
+		}
+
+	    }
+	}
+    }
+
     .headerbck {
 	position: absolute;
 	top: 0;
@@ -365,10 +403,11 @@ main {
 
 	    .publisher, .description {
 		font-style: italic;
+		font-size: .9em;
 	    }
 
 	    .year {
-		margin-left: 1em;
+		margin-left: 1.2em;
 	    }
 
 	    a {

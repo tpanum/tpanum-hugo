@@ -9,12 +9,16 @@
 :EXPORT_FILE_NAME: _index
 :END:
 
-I am a *PhD student* at [[https://es.aau.dk][Department of Electronic Systems]], [[https://aau.dk][Aalborg University]] (AAU) working on *security aspects of machine learning, and applied cases of machine learning in adversarial settings*.
+<blockquote>
+<p>Quantifying the intelligence of intelligent systems, is equally important to the act of measuring its absence.</p>
+<cite><span class="author">Thomas Kobber Panum</span><span class="role">PhD Student at Aalborg University</span></cite>
+</blockquote>
 
-After obtaining a M.Sc. in Machine Intelligence ([thesis](/files/msc_thesis.pdf)) and B.Sc. in Software Engineering from AAU, I went onto become a data scientist and utilize machine learning for a variety of business applications.
-These applications spanned across multiple fields, such as: medical ([[https://enversion.dk][Enversion]]), insurance ([[https://ecsact.dk][Ecsact]], [[https://tryg.com][Tryg Insurance]]) and logistics ([[https://ecsact.dk][Ecsact]]).
+With the surging expectations of modern intelligent systems, the demand for robustness acts as a corner stone for fulfilling these expectations.
+Through my research as a PhD student at [[https://es.aau.dk][Department of Electronic Systems]], [[https://aau.dk][Aalborg University]] (AAU), I seek explore and expand the knowledge of robustness in machine learning methods, particularly for adversarial settings.
 
-The research conducted throughout my PhD is set out to *improve the robustness of phishing detection models* by a set of empirical studies, that leads to more fundamental research that address the underlying methodologies and theories.
+I obtained a M.Sc. in Machine Intelligence ([thesis](/files/msc_thesis.pdf)) and B.Sc. in Software Engineering from AAU, following some years in industry to apply machine learning for a variety of business applications.
+These applications covered multiple domains, such as: medical ([[https://enversion.dk][Enversion]]), insurance ([[https://ecsact.dk][Ecsact]], [[https://tryg.com][Tryg Insurance]]) and logistics ([[https://ecsact.dk][Ecsact]]).
 
 <aside>
 <h2 data-icon="&#xf19d;">Curriculum Vitae</h2>
@@ -44,13 +48,24 @@ If you have questions or comments about my publications, [[/contact/][send me an
 If you are interessted in collaborating with me don't hesitate to <a href="/contact/">contact me</a>.
 </aside>
 
+** Towards Adversarial Phishing Detection
+:PROPERTIES:
+:EXPORT_FILE_NAME: towards_adv_phish
+:EXPORT_DATE: 2020-07-01T00:00:00+02:00
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :venueshort CSET 2020
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :publisher Proceedings of the 13th USENIX Workshop on Cyber Security Experimentation and Test
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :authors '("Thomas Kobber Panum" "Kaspar Hageman" "René Rydhof Hansen" "Jens Myrup Pedersen")
+:END:
+
+
 ** CAUSE: Learning Granger Causality from Event Sequences using Attribution Methods
 :PROPERTIES:
 :EXPORT_FILE_NAME: cause
-:EXPORT_DATE: 2020-02-18:00:00+02:00
+:EXPORT_DATE: 2020-02-18T00:00:00+02:00
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :link https://arxiv.org/abs/2002.07906
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER: :pdflink https://arxiv.org/pdf/2002.07906.pdf
-:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :venueshort  ICML 2020
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :venueshort ICML 2020
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :acceptancerate 21.8
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :publisher Proceedings of the 37th International Conference on Machine Learning
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :authors '("Wei Zhang" "Thomas Kobber Panum" "Somesh Jha" "Prasad Chalasani" "David Page")
 :END:
