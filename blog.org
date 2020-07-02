@@ -10,7 +10,7 @@
 :END:
 
 <blockquote>
-<p>Quantifying the intelligence of intelligent systems, is equally important to the act of measuring its absence.</p>
+<p>Quantifying the intelligence of intelligent systems, is of equal importance to the absence thereof.</p>
 <cite><span class="author">Thomas Kobber Panum</span><span class="role">PhD Student at Aalborg University</span></cite>
 </blockquote>
 
