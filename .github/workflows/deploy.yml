@@ -1,0 +1,47 @@
+name: Deploy to pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      - name: Compile org-mode to Hugo HTML
+        uses: docker://silex/emacs:master-alpine
+        with:
+          args: emacs blog.org --load org-config.el --batch -f tpanum/compile
+
+      - name: Compile sass to css
+        run: |
+          sudo apt-get install -y sass
+          mkdir -p themes/tpanum/static/css
+          rm -f themes/tpanum/static/css/style.css
+          sass themes/tpanum/scss/style.scss:themes/tpanum/static/css/style.css --style compressed
+          sha256sum themes/tpanum/static/css/style.css
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.73.0'
+
+      - name: Compile Hugo Templates to HTML
+        run: hugo --minify
+
+      - name: Create CNAME file
+        run: |
+          echo panum.dk > public/CNAME
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          external_repository: tpanum/tpanum.github.io
+          publish_branch: master
+          publish_dir: ./public
