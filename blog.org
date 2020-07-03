@@ -778,3 +778,77 @@ My only advice to you, dear reader, is to head over to the [[https://nixos.org/n
 I wish to start using [[https://orgmode.org/manual/Agenda-commands.html][org-agenda]] (extensible todo system for Emacs), properly.
 Properly, refers to the fact that I have tried it once, but never got /hooked/ on it.
 My experience with =org-mode= was the same, not entirely hooked on the first attempt, but now I cannot live without it.
+** Mirroring of Overleaf to GitHub
+:PROPERTIES:
+:EXPORT_FILE_NAME: overleaf_github_integration
+:EXPORT_DATE: 2020-07-03T09:00:00+02:00
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :keywords '("overleaf" "github" "latex")
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :description Continuous GitHub mirroring of Overleaf repositories
+:END:
+
+A typical problem in life of modern academia is maintain TeX-files, and their compiled PDF form, in sync among authors of the work.
+This fact becomes increasing important as feedback and modifications of the work is occurring asynchronously.
+Traditionally feedback would be gathered by sending PDF around through email, following responses with feedback.
+Naturally, these responses can take a while to be ready, and thereby feedback might be based on an outdated version of the work as it is continuously changing.
+[[https://www.overleaf.com][Overleaf]] combats this problem by being a centralized platform of collaboration, managing TeX-files and their compiled PDF form.
+However, the platform can be very restrictive when one wish to modify TeX-files, as it forces you to use the in-browser editor and not your favorite text editor.
+Additionally, you might want to keep mirrors of your Overleaf papers, [[https://twitter.com/overleaf/status/1225679140772122625][in case the platform become unavailable during critical times]].
+Personally, I am used to (and a fan of) GitHub's collaboration tools (issues, project, pull requests, and more) and wanted to keep my papers available on GitHub for this reason and availability.
+Despite GitHub recently having introduced continuous integration in the form of [[https://github.com/features/actions][GitHub actions]], I quickly realized that compiling TeX files effectively (without massive full-tex docker images) was challenging due to the ever-evolving TeX package repositories.
+
+*Setup a new project by using the following procedure:*
+
+1. Create a repository that contains the workflow file for mirroring on GitHub.
+2. Use the "Import from GitHub"-feature on Overleaf to create your Overleaf project.
+3. Configure "Secrets" under the settings tab on your GitHub repository (Add the following: `OVERLEAF_USER`, `OVERLEAF_PASS`, `OVERLEAF_ID`).
+4. Clone your Overleaf project using git.
+5. *You're done!* Keep using the Overleaf repository as the central owner of the repository, as changes made on the online editor will be added as commits by Overleaf.
+
+*** Workflow File [Step 1]
+This file was originally created by my colleague [[https://vbn.aau.dk/en/persons/121817][Egon Kidmose]] ([[https://github.com/kidmose/][@kidmose]]), I have modified it slightly and updated some components.
+
+#+BEGIN_SRC yaml
+name: Rebase Overleaf into master (heartbeat)
+# Modified version of the original workflow designed by Egon Kidmose (@kidmose).
+on:
+  schedule:
+    - cron: '0 0 * * * ' # once a day at midnight
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Configure git user
+      run: |
+        # REMEMBER TO URL ENCODE OVERLEAF_{USER,PASS}!
+        git config user.name "${GITHUB_ACTOR}"
+        git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+        git config credential.helper store --file=~/.git-credentials
+        echo "https://${{ secrets.OVERLEAF_USER }}:${{ secrets.OVERLEAF_PASS }}@git.overleaf.com" > ~/.git-credentials
+    - name: Fetch Overleaf repository
+      run: |
+        # REMEMBER TO SET OVERLEAF_ID IN SECRETS
+        # The ID can be found be browsing an Overleaf project and then view the url: https://www.overleaf.com/project/<OVERLEAF_ID>
+        git remote add overleaf "https://git.overleaf.com/${{ secrets.OVERLEAF_ID }}"
+        git fetch overleaf
+    - name: Rebase from Overleaf
+      run: |
+        git rebase --autosquash --autostash overleaf/master
+        git log --oneline | head -n 3
+    - name: Push changes to GitHub
+      run: |
+        git push -f
+#+END_SRC
+
+*** Cloning from Overleaf [Step 4]
+Use the following Bash-script to clone your newly formed Overleaf project (imported from GitHub).
+Throughout this setup Overleaf will serve as the "master" repository, such that GitHub will just be a simply mirror, ensuring that conflicts will not occur.
+#+BEGIN_SRC bash
+encode() {
+  python -c "import urllib.parse; import sys; print(urllib.parse.quote(\"${1}\"))"
+}
+EMAIL=$(encode "<your_overleaf_email>")
+PASSWORD=$(encode "<your_overleaf_password>")
+OID="<overleaf_project_id>" # Browse your project in Overleaf, and then find the ID through the url: https://www.overleaf.com/project/<project_id>
+git clone "https://$EMAIL:$PASSWORD@git.overleaf.com/$OID"
+#+END_SRC
