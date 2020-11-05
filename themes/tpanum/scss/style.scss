@@ -135,6 +135,10 @@ body {
 	-ms-grid-columns: 1fr $sidebar-width;
 	grid-template-columns: 1fr $sidebar-width;
 	grid-template-areas: "header header" "main aside" "footer footer";
+
+	> .blog {
+	    grid-template-areas: "header header" "main main" "footer footer";
+	}
     }
 }
 
@@ -209,6 +213,12 @@ main {
     min-width: 200px;
     max-width: 100%;
     padding: 1em 40px;
+
+    &.blog {
+	grid-column-start: main;
+	grid-column-end: aside;
+	background:$main-background;
+    }
 
     pre {
 	background: $third;
