@@ -218,6 +218,14 @@ main {
 	grid-column-start: main;
 	grid-column-end: aside;
 	background:$main-background;
+
+	.title,.date {
+	    text-align: center;
+	}
+	.date {
+	    display: block;
+	    margin: 0 auto;
+	}
     }
 
     pre {

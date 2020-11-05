@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main class="blog">
-    <h1>{{ .Title }}</h1>
-    <span>{{ .Date.Format "January 2, 2006" }}</span>
+    <h1 class="title">{{ .Title }}</h1>
+    <span class="date">{{ .Date.Format "January 2, 2006" }} &mdash; {{ .Site.Params.author }}</span>
     {{ .Content }}
 </main>
 {{ end }}
