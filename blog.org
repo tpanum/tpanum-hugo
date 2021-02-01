@@ -127,6 +127,15 @@ You can find a list of dissemination related to my research below.
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :talks '("Wiley, Copenhagen (April 2019)" "Copenhagen Business Academy, Lyngby (April 2019)" "AspIT, Aalborg (April 2019)" "IUM, Copenhagen (April 2019)" "LEGO, Billund (April 2019)" "IDA, Aalborg (April 2019)" "Zealand, Slagelse (April 2019)" "IDA, Copenhagen (April 2019)" "IDA, Aarhus (May 2019)")
 :END:
 
+** »Nok et af de største luftkasteller inden for IT-sikkerhed«: Ph.d. kaster kritisk blik på phishing-filtre
+:PROPERTIES:
+:EXPORT_FILE_NAME: usenix_v2_phish
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER: :kind media
+:EXPORT_DATE: 2020-05-13T06:00:00+02:00
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :publisher Version2
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :link https://www.version2.dk/artikel/nok-de-stoerste-luftkasteller-inden-it-sikkerhed-phd-kaster-kritisk-blik-paa-phishing-filtre
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :backup_url /img/backup/usenix_v2_phish.png
+:END:
 ** Afslørede CPR-numre: Forsikringsselskab stopper online salg efter Version2-artikler
 :PROPERTIES:
 :EXPORT_FILE_NAME: if_cpr_leak_follow_up_two
